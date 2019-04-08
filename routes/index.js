@@ -13,6 +13,13 @@ async function makeDir (dirpath) {
   }
 }
 
+router.get('/', function(req, res, next) {
+  res.send({
+    status: 200,
+    message: 'Welcome!'
+  })
+})
+
 /* Router to get files from the directory */
 router.post('/files', function(req, res, next) {
     let {path} = req.body;
