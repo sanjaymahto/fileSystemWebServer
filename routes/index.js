@@ -5,7 +5,6 @@ var fileFormatter = require('../utils/response');
 var error = require('../utils/errorMessage');
 var router = express.Router();
 
-
 async function makeDir (dirpath) {
   try {
     await fs.mkdir(dirpath, { recursive: true })
