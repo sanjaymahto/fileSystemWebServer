@@ -70,7 +70,9 @@ router.post('/deleteFile', async function(req, res, next) {
   let {path, fileName} = req.body;
   let dirPath = `${process.cwd()}/${path}/${fileName}`
   fs.unlink(dirPath, function (err) {
-    if (err) throw err;
+    if (err) {
+      res.send(error(err));
+    }
     res.send({
       status: 200,
       message: 'file deleted Successfully!!'
