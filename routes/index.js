@@ -43,7 +43,6 @@ router.post('/createFile', function(req, res, next) {
   });
 });
 
-
 /* Router to create a folder */
 router.post('/createFolder', async function(req, res, next) {
   let {path, folderName} = req.body;
