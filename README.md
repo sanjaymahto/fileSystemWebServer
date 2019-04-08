@@ -16,3 +16,5 @@ Server App
    2.) Run npm install to install all the dependencies.
 
    3.) Run Server - `npm start`.
+
+   4.) Stop server - `npm stop`.
